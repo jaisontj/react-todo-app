@@ -1,0 +1,7 @@
+- alias: hasura
+  config:
+    configmap: controller-conf
+    namespace: illumination52-hasura
+  data: null
+  kubeContext: illumination52
+  name: illumination52
