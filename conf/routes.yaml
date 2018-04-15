@@ -229,3 +229,14 @@ notify:
     corsPolicy: allow_all
 
 # To see actual endpoints for these routes, use `$ hasura ms ls`
+
+ui:
+  /:
+    corsPolicy: allow_all
+    upstreamService:
+      name: ui
+      namespace: '{{ cluster.metadata.namespaces.user }}'
+    upstreamServicePath: /
+    upstreamServicePort: 80
+
+
